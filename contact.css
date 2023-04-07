@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(background.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+nav {
+    display: flex;
+    padding-left: 5%;
+    background-color: #389F50;
+}
+nav ul{
+    padding-right: 12%;
+    /* font-size: 20px; */
+    text-decoration: none;
+    list-style: none;
+    padding-left: 5%;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+#logo {
+    font-size: 48px;
+    background-color: #274F75;
+    height: 80px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: white;
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+#info{
+    float: right;
+    font-size: 20px;
+    /* text-align: right; */
+}
+#click{
+    display: none;
+}
+label{
+    display: none;
+}
+.address{
+    font-size: 50px;
+    border-radius: 50%;
+    background-color: #274F75;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    margin: auto;
+    margin-top: 5%;
+}
+.address a{
+    text-decoration: none;
+    color: white;
+}
+#address {
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px 0 595px;
+}
+.phone{
+    font-size: 50px;
+    border-radius: 50%;
+    background-color: #274F75;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    margin: auto;
+    margin-top: 2%;
+}
+.phone a{
+    text-decoration: none;
+    color: white;
+}
+#phone{
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px 0 595px;
+}
+.email{
+    font-size: 50px;
+    border-radius: 50%;
+    background-color: #274F75;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    margin: auto;
+    margin-top: 2%;
+}
+.email a{
+    text-decoration: none;
+    color: white;
+}
+#email{
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px 0 595px;
+    margin-bottom: 40px;
+}
+@media (max-width:700px) {
+    #info{
+        float: left;
+        font-size: 17px;
+    }
+
+    body{
+        background-image:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(background.png);
+        background-size: cover;
+    }
+    nav ul{
+        font-size: 20px;
+        padding-left: 30%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    nav ul li a{
+        padding-left: 0%;
+        padding-right: 0%;
+        color: white;
+    }
+    nav{
+        height: 100%;
+        width: 100%;
+        display: block;
+        padding-left: 0%;
+        padding-right: 0%;
+        position: absolute;
+        background-color: #274F75;
+        left: -100%;
+        transition: 0.5s;
+    }
+    #click:checked~nav{
+        left: 0%;
+    }
+    #logo{
+        font-size: 35px;
+    }
+    label{
+        display: block;
+        color: white;
+        font-size: 15px;
+        margin-left: 295px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    .address{
+        font-size: 50px;
+        border-radius: 50%;
+        background-color: #274F75;
+        width: 100px;
+        height: 80px;
+        text-align: center;
+        padding-top: 15px;
+        color: white;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .address a{
+        text-decoration: none;
+        color: white;
+    }
+    #address {
+        color: white;
+        font-size: 20px;
+        padding: 10px 15px 0 15px;
+    }
+    .phone{
+        font-size: 50px;
+        border-radius: 50%;
+        background-color: #274F75;
+        width: 100px;
+        height: 80px;
+        text-align: center;
+        padding-top: 15px;
+        color: white;
+        margin: auto;
+        margin-top: 10%;
+    }
+    #phone{
+        color: white;
+        font-size: 20px;
+        padding: 10px 15px 0 15px;
+    }
+    .email{
+        font-size: 50px;
+        border-radius: 50%;
+        background-color: #274F75;
+        width: 100px;
+        height: 80px;
+        text-align: center;
+        padding-top: 15px;
+        color: white;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .email a{
+        text-decoration: none;
+        color: white;
+    }
+    #email{
+        color: white;
+        font-size: 20px;
+        padding: 10px 15px 0 15px;
+        margin-bottom: 40px;
+    }
+}
